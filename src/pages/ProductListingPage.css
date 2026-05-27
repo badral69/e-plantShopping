@@ -1,0 +1,78 @@
+.listing-page {
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+.listing-hero {
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+  padding: 48px 24px;
+  text-align: center;
+  border-bottom: 1px solid #e8f5e9;
+}
+
+.listing-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1b5e20;
+  margin: 0 0 10px;
+}
+
+.listing-subtitle {
+  font-size: 1rem;
+  color: #66bb6a;
+  margin: 0;
+  font-weight: 500;
+}
+
+.listing-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+.category-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.cat-btn {
+  padding: 9px 20px;
+  border-radius: 50px;
+  border: 2px solid #c8e6c9;
+  background: white;
+  color: #424242;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cat-btn:hover {
+  border-color: #2e7d32;
+  color: #2e7d32;
+  background: #f1f8e9;
+}
+
+.cat-btn.active {
+  background: #2e7d32;
+  border-color: #2e7d32;
+  color: white;
+}
+
+.results-count {
+  font-size: 0.9rem;
+  color: #757575;
+  margin: 0 0 24px;
+}
+
+.results-count strong {
+  color: #2e7d32;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
