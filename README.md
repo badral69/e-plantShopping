@@ -9,7 +9,7 @@ A React-based online plant shop where users can browse plants, manage a shopping
 - Add plants to cart and manage quantities
 - Dynamic cart badge showing total item count
 - Order summary with subtotal, tax, and total
-- About Us page
+- About Us page.
 
 ## Tech Stack
 
