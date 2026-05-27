@@ -1,16 +1,56 @@
-# React + Vite
+# 🌿 Paradise Nursery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based online plant shop where users can browse plants, manage a shopping cart, and learn about the store.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse 18 plants across 3 categories (Air Purifying, Aromatic, Insect Repellent)
+- Filter plants by category
+- Add plants to cart and manage quantities
+- Dynamic cart badge showing total item count
+- Order summary with subtotal, tax, and total
+- About Us page
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — UI components
+- **Redux Toolkit** — global cart state (`cartSlice.jsx`)
+- **React Router** — client-side navigation
+- **Vite** — build tool
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── Header.jsx        # Sticky nav with cart badge
+│   ├── ProductCard.jsx   # Individual plant card
+│   ├── ProductList.jsx   # Plant grid with category filter
+│   └── CartItem.jsx      # Single cart row (image, qty, price)
+├── pages/
+│   ├── LandingPage.jsx   # Hero, features, CTA
+│   ├── CartPage.jsx      # Cart with order summary
+│   └── AboutUs.jsx       # Company info
+├── store/
+│   ├── store.js
+│   └── cartSlice.jsx     # add / remove / increase / decrease / clear
+└── data/
+    └── plants.js         # 18 plant records
+```
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |

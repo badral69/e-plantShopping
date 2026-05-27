@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import LandingPage from "./pages/LandingPage";
 import ProductListingPage from "./pages/ProductListingPage";
 import CartPage from "./pages/CartPage";
+import AboutUs from "./pages/AboutUs";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/plants" element={<ProductListingPage />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </main>
       </BrowserRouter>

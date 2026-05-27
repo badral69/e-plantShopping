@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectCartCount } from "../store/cartSlice";
+import { selectCartCount } from "../store/cartSlice.jsx";
 import "./Header.css";
 
 export default function Header() {
@@ -24,6 +24,9 @@ export default function Header() {
           </Link>
           <Link to="/plants" className="nav-link">
             Plants
+          </Link>
+          <Link to="/about" className="nav-link">
+            About Us
           </Link>
           <button className="cart-btn" onClick={() => navigate("/cart")}>
             <span className="cart-icon">🛒</span>
