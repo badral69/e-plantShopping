@@ -3,7 +3,7 @@ import {
   increaseQuantity,
   decreaseQuantity,
   removeFromCart,
-} from "../store/cartSlice.jsx";
+} from "./cartSlice.jsx";
 import "./CartItem.css";
 
 export default function CartItem({ item }) {

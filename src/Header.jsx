@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectCartCount } from "../store/cartSlice.jsx";
+import { selectCartCount } from "./cartSlice.jsx";
 import "./Header.css";
 
 export default function Header() {

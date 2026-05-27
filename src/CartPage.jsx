@@ -5,8 +5,8 @@ import {
   selectCartTotal,
   selectCartCount,
   clearCart,
-} from "../store/cartSlice.jsx";
-import CartItem from "../components/CartItem.jsx";
+} from "./cartSlice.jsx";
+import CartItem from "./CartItem.jsx";
 import "./CartPage.css";
 
 export default function CartPage() {

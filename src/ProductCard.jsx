@@ -4,7 +4,7 @@ import {
   increaseQuantity,
   decreaseQuantity,
   selectCartItems,
-} from "../store/cartSlice.jsx";
+} from "./cartSlice.jsx";
 import "./ProductCard.css";
 
 export default function ProductCard({ plant }) {

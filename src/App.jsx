@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-import { store } from "./store/store";
-import Header from "./components/Header";
-import LandingPage from "./pages/LandingPage";
-import ProductListingPage from "./pages/ProductListingPage";
-import CartPage from "./pages/CartPage";
-import AboutUs from "./pages/AboutUs";
+import { store } from "./store";
+import Header from "./Header";
+import LandingPage from "./LandingPage";
+import ProductListingPage from "./ProductListingPage";
+import CartPage from "./CartPage";
+import AboutUs from "./AboutUs";
 
 export default function App() {
   return (
