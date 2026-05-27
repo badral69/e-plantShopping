@@ -1,1 +1,77 @@
-/* Reset Vite defaults - app styles live in component CSS files */
+.background-image {
+  background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 60px 48px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.company-name {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: white;
+  margin: 0 0 12px;
+}
+
+.company-tagline {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 36px;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.get-started-btn {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  font-family: inherit;
+}
+
+.get-started-btn:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+}
+
+.about-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.about-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.app {
+  min-height: 100vh;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+}
